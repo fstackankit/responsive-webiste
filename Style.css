@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: teal;
+}
+.logo{
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+h1{
+    color: white;
+}
+.container{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    margin-right: 40px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.nav li{
+    list-style: none;
+}
+.nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.nav li a:hover{
+    background-color: red;
+}
+.hero2{
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+.big-txt{
+    font-size: 40px;
+    font-weight: 1000;
+    margin-bottom: 10px;
+}
+.right1{
+    width: 400px;
+}
+@media only screen and (max-width: 768px){
+    .nav .mobile{
+        display: none;
+    }
+    #menu-btn{
+        display: block;
+    }
+    .logo{
+        width: 6vw;
+    }
+    h1{
+        font-size: 4vw;
+    }
+    .hero{
+        height: 25vw;
+    }
+    .first{
+        font-size: 4vw;
+    }
+    .hero1{
+        margin-top: 4vw;
+    }
+    .second{
+        font-size: 2vw;
+    }
+    form{
+        margin-top: 0.5vw;
+    }
+    form input{
+        font-size: 2vw;
+        padding: 1vw;
+        width: 30vw;
+
+    }
+    from label{
+        height: 3vw;
+        font-weight: 500;
+    }
+}
+.hide{
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: auto;
+    background: rgba(34,34, 34, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(23,23,23,0.3);
+    display: none;
+}
+.hide li{
+    list-style: none;
+    width: 100%;
+}
+.hide li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.hide li a:hover{
+    background-color: red;
+}
+.bg{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -22;
+    top: 0;
+
+}
+.hero{
+    height: 50vh;
+}
+.hero1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+}
+.hero1 span{
+    width: 74vw;
+    margin: auto;
+}
+.first{
+    font-size: 40px;
+    font-weight: 1000;
+    color: white;
+    margin-bottom: 15px;
+}
+.second{
+    color: white;
+}
+form input{
+    margin-top: 15px;
+    background-color: rgba(153,147, 147, 0.2);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    height:40px;
+    width: 300px;
+    padding: 10px;
+}
+form label{
+    background: red;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    border: 1.5px solid black;
+}
+form label:hover{
+    background-color: orange;
+    cursor: pointer;
+
+}
