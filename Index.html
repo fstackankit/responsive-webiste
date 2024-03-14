@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <img src="1610964181306.jpg" alt="" class="logo">
+            <h1>ABC Classes</h1>
+        </div>
+        <ul class="nav">
+            <li class="mobile"><a href="">Home</a></li>
+            <li class="mobile"><a href="">About</a></li>
+            <li class="mobile"><a href="">Contact Us</a></li>
+            <li class="mobile"><a href="">Services</a></li>
+            <li  onclick="shownav()" id="menu-btn"><a href=""><svg fill="white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+                </svg></a></li>
+        </ul>
+        <ul class="hide">
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Home</a></li>
+            <li onclick="hidenav()" id="menu-btn"><a href=""><svg fill="white" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 50 50">
+                <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+                </svg></a></li>
+        </ul>
+        
+    </nav>
+    <section class="hero">
+        <img class="bg" src="pic1.jpg" alt="">
+        <div class="hero1">
+            <span class="first">Let's Learn Togeather</span>
+            <span class="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque tempora expedita, est labore adipisci illum? Harum magnam accusantium earum amet ea animi, cupiditate nostrum, labore sequi, dicta pariatur incidunt eius.</span>
+            <form action="">
+                <input type="text" placeholder="Enter your E-mail">
+                <label for="">Subscribe</label>
+            </form>
+        </div>
+    </section>
+    <section class="hero2">
+        <div class="left1">
+            <p>
+                <span class="big-txt">Lorem ipsum dolor sit.</span>
+                <span class="sml txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, quo qui sint quasi aspernatur ipsum libero quaerat iusto, accusantium consectetur tempora, minus omnis labore fuga magnam placeat perferendis aperiam necessitatibus! Iste, ut. Suscipit vitae, veniam, dicta ut aliquid nam odio adipisci commodi illum soluta voluptatum.</span>
+            </p>
+        </div>
+        <div class="right1">
+            <img src="img123.avif" alt="img">
+        </div>
+    </section>
+    <script>
+        function shownav(){
+            var show=document.querySelector('.hide');
+            show.style.display='flex';
+        }
+        function hidenav(){
+            var hide=document.querySelector('.hide');
+            hide.style.display='none';
+        }
+    </script>
+</body>
+</html>
